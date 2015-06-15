@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dota 2 Hesaplayıcı</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  </head>
+  <body>
+  <span id="span" class="fui-info-circle " onClick="return KeepCount()"></span>
+
+   <div class="container">
+   <div class="faruk">
+        <div class="row">
+        <section>
+        <form action="nom.php" methot="GET" name="cem">
+        <br><br>
+          <div class="col-md-6 col-md-offset-3">
+          <p>
+          <a class="thumbnail">
+          <img src="img/a.png" id="cem" class="img-responsive"style="width: 400px; height=400px; display: block;" >
+          </a>
+          <input id="a" name="girdi" type="text" class="form-control" placeholder="http://steamcommunity.com/id/" />
+          <br>
+          <button type="submit" class="btn btn-primary btn-lg btn-block btn">Giriş</button><br>
+         <h6><div id="ff"><span id="myspan"></span></div></h6>
+         <p><div id="ff"><span id="myspan2"></span></div></p>
+          </p>
+        </div>
+      </form>
+        </section>
+        </div>
+</div>
+</div>
+
+<script type="text/javascript">
+var a = 0;
+  function KeepCount() {
+    a = a + 1;
+    b = a % 2;
+  if(b == 1){
+     document.getElementById("myspan").textContent="Yapılma Amacı:";
+     document.getElementById("myspan2").textContent="Dota 2 oynarken sizin kaç farklı kişiyle tanıştığınızı hesaplamak amacıyla yapılmıştır";
+   }else{
+    document.getElementById("myspan").textContent="";
+    document.getElementById("myspan2").textContent="";
+   }
+
+};
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61820447-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+  </body>
+</html>

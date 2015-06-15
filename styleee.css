@@ -1,0 +1,43 @@
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#row{
+	height: 100px;
+}
+.lead{
+	font-size: 150px;
+}
+
+#small{
+	font-size: 25px;
+}
+
+
+
+@media (min-width: 1200px) {
+body{
+	background-image: url("img/image.jpg");
+	background-repeat: no-repeat;
+	width: 101%;
+	height: 101%;
+	color: #ECF0F1;
+
+}
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+body{
+	background-image: url("img/image.jpg");
+	background-repeat: no-repeat;
+	width: 101%;
+	height: 101%;
+	color: #ECF0F1;
+
+}
+}
+
+@media (max-width: 767px) {
+body{
+	color: #2C3E50;
+}
+}
